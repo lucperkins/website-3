@@ -1,5 +1,5 @@
 {{- $date            := dateFormat "January 2, 2006" .Date }}
-{{- $authors         := .Params.authors }}
+{{- $authors         := cond (isset .Params "authors") .Params.authors (slice .Params.author) }}
 {{- $authorsIncluded := gt (len $authors) 0 }}
 <a href="{{ .URL }}">
   <div class="card">
