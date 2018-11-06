@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>{{ block "title" . }}{{ .Site.Title }} | {{ .Site.Params.subtitle }} {{ end }}</title>
     {{ partial "css.html" . }}
   </head>
   <body class="page has-navbar-fixed-top">
