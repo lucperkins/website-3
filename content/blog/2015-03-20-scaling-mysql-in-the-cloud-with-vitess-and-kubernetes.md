@@ -5,6 +5,7 @@ slug: "2015-03-20-scaling-mysql-in-the-cloud-with-vitess-and-kubernetes"
 tags: [ "kubernetes", "cloud",]
 title: "Scaling MySQL in the cloud with Vitess and Kubernetes"
 ---
+
 *Cross-posted
 on [Google Cloud Platform
 Blog](http://googlecloudplatform.blogspot.com/2015/03/scaling-MySQL-in-the-cloud-with-Vitess-and-Kubernetes.html).*

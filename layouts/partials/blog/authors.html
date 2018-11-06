@@ -1,0 +1,26 @@
+{{- $authors := (slice) }}
+{{- range . }}
+{{- with .Params.author }}
+{{- $authors = $authors | append . }}
+{{- end }}
+{{- with .Params.authors }}
+{{- range . }}
+{{- $authors = $authors | append . }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- $authors := $authors | uniq }}
+
+<p class="is-size-3">
+  Authors
+</p>
+
+<hr />
+
+<ul>
+  {{- range $authors }}
+  <li>
+    {{ . }}
+  </li>
+  {{- end }}
+</ul>
