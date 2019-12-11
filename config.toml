@@ -3,9 +3,8 @@ canonifyurls = true
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Syntax highlighting settings
-pygmentsCodeFences = true
-pygmentsUseClasses = false
-pygmentsStyle = "fruity"
+[markup.highlight]
+style = "dracula"
 
 [params.assets]
 js = ["jquery-3.3.1", "jquery-ui-1.12.1", "jquery.tocify-1.9.0", "app"]
